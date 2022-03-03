@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Run Buddy</title>
-    <link rel="stylesheet" type="text/css" href="CSS/main.css" />
+    <link rel="stylesheet" type="text/css" href="./CSS/main.css" />
   </head>
   <body>
     <!-- navigation -->
@@ -35,8 +35,8 @@
     </header>
 
     <!-- hero/jumbotron -->
-    <section>
-      <div>
+    <section class="hero">
+      <div class="hero-form">
         <h3>Get Started Today</h3>
         <p>
           Fill out this form and one of our trainers will schedule a consult
@@ -44,16 +44,24 @@
         <!-- Add form element -->
         <form>
           <label for="name">Enter full name:</label>
-          <input type="text" placeholder="Your Name" name="name" id="name" />
+          <input
+            type="text"
+            placeholder="Your Name"
+            name="name"
+            id="name"
+            class="form-input"
+          />
           <label for="email">Enter email address:</label>
           <input
             type="email"
             placeholder="Email Address"
             name="email"
             id="email"
+            class="form-input"
           />
           <label for="phone">Enter a telephone number:</label>
           <input
+            class="form-input"
             type="tel"
             placeholder="Phone Number"
             name="phone"
