@@ -69,3 +69,8 @@ footer div {
 footer a {
   color: #024e76;
 }
+
+section {
+  padding: 60px;
+  background-image: url("../../run-buddy/assets/images/hero-bg.jpg");
+}
