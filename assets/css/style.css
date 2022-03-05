@@ -72,7 +72,7 @@ section {
 
 /* Hero Style Start */
 .hero {
-  background-image: url('../images/hero-bg.jpg');
+  background-image: url("../images/hero-bg.jpg");
   height: 600px;
   background-size: cover;
   background-position: center;
@@ -119,4 +119,28 @@ section {
   border: none;
   padding: 10px 20px;
   font-size: 16px;
+}
+
+/* ↓↓↓ Class CSS ↓↓↓ */
+
+.intro {
+  text-align: center;
+}
+
+.intro h2 {
+  display: inline-block;
+  font-size: 55px;
+  color: #024e76;
+  margin-bottom: 35px;
+  padding: 0 100px 20px 100px;
+  border-bottom: solid 3px;
+  border-color: #fce138;
+}
+
+.intro p {
+  line-height: 1.7;
+  color: #39a6b2;
+  width: 80%;
+  font-size: 20px;
+  margin: 0 auto;
 }
