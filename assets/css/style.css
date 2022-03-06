@@ -72,7 +72,7 @@ section {
 
 /* Hero Style Start */
 .hero {
-  background-image: url("../images/hero-bg.jpg");
+  background-image: url('../images/hero-bg.jpg');
   height: 600px;
   background-size: cover;
   background-position: center;
@@ -169,7 +169,6 @@ section {
   padding: 0 100px 20px 100px;
   display: inline-block;
   border-bottom: 3px solid;
-  margin-bottom: 35px;
 }
 
 .primary-border {
@@ -185,11 +184,11 @@ section {
 }
 
 .trainer {
-  overflow: auto;
   width: 900px;
   margin: 0 auto 30px auto;
   background: #024e76;
   color: #fce138;
+  overflow: auto;
 }
 
 .trainer img {
@@ -201,14 +200,6 @@ section {
   padding: 35px;
   float: left;
   width: 65%;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
 }
 
 .trainer-bio h3 {
@@ -227,11 +218,15 @@ section {
   line-height: 1.3;
 }
 
-.contact-info a {
-  text-decoration: none;
-  color: #fce138;
+.text-left {
+  text-align: left;
 }
 
+.text-right {
+  text-align: right;
+}
+
+/* REACH OUT STYLES START */
 .contact {
   text-align: center;
   background: #024e76;
@@ -267,3 +262,9 @@ section {
   font-size: 20px;
   font-style: normal;
 }
+
+.contact-info a {
+  color: #fce138;
+}
+
+/* REACH OUT STYLES END */
