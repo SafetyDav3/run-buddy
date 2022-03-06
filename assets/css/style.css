@@ -178,3 +178,50 @@ section {
 .secondary-border {
   border-color: #39a6b2;
 }
+
+.trainers {
+  text-align: center;
+}
+
+.trainer {
+  overflow: auto;
+  width: 900px;
+  margin: 0 auto 30px auto;
+  background: #024e76;
+  color: #fce138;
+}
+
+.trainer img {
+  width: 35%;
+  float: left;
+}
+
+.trainer-bio {
+  padding: 35px;
+  float: left;
+  width: 65%;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.trainer-bio h3 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.trainer-bio h4 {
+  font-weight: lighter;
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+
+.trainer-bio p {
+  font-size: 17px;
+  line-height: 1.3;
+}
