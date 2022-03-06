@@ -169,6 +169,7 @@ section {
   padding: 0 100px 20px 100px;
   display: inline-block;
   border-bottom: 3px solid;
+  margin-bottom: 35px;
 }
 
 .primary-border {
@@ -228,4 +229,28 @@ section {
 
 address a {
   text-decoration: none;
+  color: #fce138;
+}
+
+.contact {
+  text-align: center;
+  background: #024e76;
+}
+
+.contact h2 {
+  color: #fce138;
+}
+
+.contact-info iframe {
+  width: 400px;
+  height: 400px;
+}
+
+.contact-info div {
+  width: 410px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin: 30px 0 0 60px;
+  color: white;
 }
