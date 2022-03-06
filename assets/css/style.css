@@ -227,7 +227,7 @@ section {
   line-height: 1.3;
 }
 
-address a {
+.contact-info a {
   text-decoration: none;
   color: #fce138;
 }
@@ -253,4 +253,17 @@ address a {
   text-align: left;
   margin: 30px 0 0 60px;
   color: white;
+}
+
+.contact-info h3 {
+  color: #fce138;
+  font-size: 32px;
+}
+
+.contact-info p,
+.contact-info address {
+  margin: 20px 0;
+  line-height: 1.5;
+  font-size: 20px;
+  font-style: normal;
 }
