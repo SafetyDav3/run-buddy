@@ -1,3 +1,5 @@
+/* ↓↓↓ Secondary Stylesheet  ↓↓↓ */
+
 .hero {
   background-position: bottom;
   height: auto;
@@ -14,6 +16,8 @@
   font-size: 42px;
   font-style: italic;
 }
+
+/* ↓↓↓ Would be one block of code in Sass ↓↓↓ */
 
 .secondary-content {
   width: 80%;
