@@ -15,4 +15,4 @@ https://lernantino.github.io/run-buddy
 
 Made with ❤️ by David Williams
 
-### ©️2019 Run Buddy, Incorp
+### ©️2019 Run Buddy, Inc
