@@ -1,16 +1,17 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  /* more on this crazy alphanumerical value in a minute! */
   color: #39a6b2;
   font-family: Helvetica, Arial, sans-serif;
 }
 
-/* apply styles to <header> */
+
+/* HEADER / NAV BAR STYLES START */
+
 header {
   padding: 20px 35px;
   background-color: #39a6b2;
@@ -18,11 +19,12 @@ header {
 
 header h1 {
   font-weight: bold;
+  display: inline;
+  margin: 0;
   font-size: 36px;
   color: #fce138;
-  margin: 0;
-  display: inline;
 }
+
 header a {
   text-decoration: none;
   color: #fce138;
@@ -43,10 +45,15 @@ header nav ul li a {
   font-size: 22px;
 }
 
+/* HEADER / NAVBAR STYLES END */
+
+
+
+/* FOOTER STYLES START */
 footer {
   background: #fce138;
-  width: 100%;
   padding: 40px 35px;
+  width: 100%;
 }
 
 footer h2 {
@@ -65,20 +72,21 @@ footer div {
 footer a {
   color: #024e76;
 }
+/* END FOOTER STYLES */
 
+/* STYLE ALL SECTION TAGS */
 section {
   padding: 60px;
 }
 
-/* Hero Style Start */
+/* HERO STYLES START */
 .hero {
-  background-image: url("../images/hero-bg.jpg");
-  height: 600px;
+  background-image: url('../images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
+  height: 600px;
 }
-/* Hero Style End */
 
 .hero-form {
   border: 3px solid #024e76;
@@ -106,7 +114,7 @@ section {
   font-size: 16px;
   color: #024e76;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 15px; 
 }
 
 .hero-form label {
@@ -119,8 +127,30 @@ section {
   border: none;
   padding: 10px 20px;
   font-size: 16px;
+} 
+/* HERO STYLES END */
+
+
+/* SECTION TITLE STYLES START */
+.section-title {
+  font-size: 55px;
+  display: inline-block;
+  padding: 0 100px 20px 100px;
+  border-bottom: 3px solid;
+  margin-bottom: 35px;
+  color: #024e76;
 }
 
+.primary-border {
+  border-color: #fce138;
+}
+
+.secondary-border {
+  border-color: #39a6b2;
+}
+/* SECTION TITLE STYLES END */
+
+/* WHAT WE DO STYLES */
 .intro {
   text-align: center;
 }
@@ -129,11 +159,14 @@ section {
   line-height: 1.7;
   color: #39a6b2;
   width: 80%;
-  font-size: 20px;
   margin: 0 auto;
+  font-size: 20px;
 }
+/* WHAT YOU DO STYLES END */
 
-.steps {
+
+/* WHAT YOU DO STYLES START */
+.steps { 
   text-align: center;
   background: #fce138;
 }
@@ -145,7 +178,7 @@ section {
 .steps img {
   width: 15%;
   margin: 10px 0;
-}
+} 
 
 .steps h3 {
   color: #024e76;
@@ -153,32 +186,17 @@ section {
   margin-top: 10px;
 }
 
-.steps p {
-  color: #39a6b2;
-  font-size: 23px;
-}
-
 .steps span {
   font-size: 38px;
 }
 
-.section-title {
-  font-size: 55px;
-  color: #024e76;
-  margin-bottom: 35px;
-  padding: 0 100px 20px 100px;
-  display: inline-block;
-  border-bottom: 3px solid;
+.steps p {
+  color: #39a6b2;
+  font-size: 23px;
 }
+/* WHAT YOU DO STYLES END */
 
-.primary-border {
-  border-color: #fce138;
-}
-
-.secondary-border {
-  border-color: #39a6b2;
-}
-
+/* MEET THE TRAINERS START */
 .trainers {
   text-align: center;
 }
@@ -217,14 +235,7 @@ section {
   font-size: 17px;
   line-height: 1.3;
 }
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
+/* TRAINER STYLES END */
 
 /* REACH OUT STYLES START */
 .contact {
@@ -238,7 +249,7 @@ section {
 
 .contact-info iframe {
   width: 400px;
-  height: 400px;
+height: 400px;
 }
 
 .contact-info div {
@@ -255,8 +266,7 @@ section {
   font-size: 32px;
 }
 
-.contact-info p,
-.contact-info address {
+.contact-info p, .contact-info address {
   margin: 20px 0;
   line-height: 1.5;
   font-size: 20px;
@@ -267,4 +277,14 @@ section {
   color: #fce138;
 }
 
+
 /* REACH OUT STYLES END */
+
+/* UTILITIES */
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
