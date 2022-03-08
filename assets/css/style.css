@@ -37,34 +37,39 @@ header nav {
   /* float: right; */
 }
 
-header nav ul li {
-  display: inline;
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
 
 header nav ul li a {
   margin: 0 30px;
   font-weight: lighter;
-  font-size: 22px;
+  font-size: 1.55vw;
 }
 
 /* HEADER / NAVBAR STYLES END */
 
 /* FOOTER STYLES START */
 footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   background: #fce138;
   padding: 40px 35px;
   width: 100%;
 }
 
 footer h2 {
-  display: inline;
   color: #024e76;
   font-size: 30px;
   margin: 0;
 }
 
 footer div {
-  float: right;
   line-height: 1.5;
   text-align: right;
 }
@@ -81,22 +86,36 @@ section {
 
 /* HERO STYLES START */
 .hero {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   background-image: url("../images/hero-bg.jpg");
   background-size: cover;
   background-position: center;
-  position: relative;
-  height: 600px;
+}
+
+.hero-cta {
+  width: 35%;
+  text-align: right;
+  margin: 3.5%;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.hero-cta h2 {
+  font-style: italic;
+  font-size: 55px;
+  color: #fce138;
 }
 
 .hero-form {
   border: 3px solid #024e76;
   background-color: #fce138;
   padding: 20px;
-  width: 500px;
   color: #024e76;
-  position: absolute;
-  bottom: 120px;
-  right: 140px;
+  width: 40%;
+  margin: 3.5%;
 }
 
 .hero-form h3 {
