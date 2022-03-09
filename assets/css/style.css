@@ -9,14 +9,15 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+
 /* HEADER / NAV BAR STYLES START */
 
 header {
+  padding: 20px 35px;
+  background-color: #39a6b2;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 20px 35px;
-  background-color: #39a6b2;
 }
 
 header h1 {
@@ -24,7 +25,6 @@ header h1 {
   margin: 0;
   font-size: 36px;
   color: #fce138;
-  /* display: inline; */
 }
 
 header a {
@@ -34,7 +34,6 @@ header a {
 
 header nav {
   margin: 7px 0;
-  /* float: right; */
 }
 
 header nav ul {
@@ -53,13 +52,15 @@ header nav ul li a {
 
 /* HEADER / NAVBAR STYLES END */
 
+
+
 /* FOOTER STYLES START */
 footer {
+  background: #fce138;
+  padding: 40px 35px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background: #fce138;
-  padding: 40px 35px;
   width: 100%;
 }
 
@@ -86,12 +87,12 @@ section {
 
 /* HERO STYLES START */
 .hero {
+  background-image: url('../images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-image: url("../images/hero-bg.jpg");
-  background-size: cover;
-  background-position: center;
 }
 
 .hero-cta {
@@ -133,7 +134,7 @@ section {
   font-size: 16px;
   color: #024e76;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 15px; 
 }
 
 .hero-form label {
@@ -146,18 +147,19 @@ section {
   border: none;
   padding: 10px 20px;
   font-size: 16px;
-}
+} 
 /* HERO STYLES END */
+
 
 /* SECTION TITLE STYLES START */
 .section-title {
+  font-size: 55px;
+  border-bottom: 3px solid;
+  color: #024e76;
   padding-bottom: 20px;
   text-align: center;
   margin: 0 auto 35px auto;
   width: 50%;
-  font-size: 55px;
-  border-bottom: 3px solid;
-  color: #024e76;
 }
 
 .primary-border {
@@ -172,30 +174,36 @@ section {
 /* WHAT WE DO STYLES */
 
 .intro p {
-  text-align: center;
   line-height: 1.7;
   color: #39a6b2;
   width: 80%;
   margin: 0 auto;
   font-size: 20px;
+  text-align: center;
 }
 /* WHAT YOU DO STYLES END */
 
+
 /* WHAT YOU DO STYLES START */
+.steps { 
+  background: #fce138;
+}
 
 .step {
   margin: 50px auto;
   padding-bottom: 50px;
   width: 80%;
-  border-bottom: solid 1px #39a6b2;
+  border-bottom: 1px solid #39a6b2;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
-.steps {
-  background: #fce138;
+.step h3 {
+  color: #024e76;
+  font-size: 46px;
+  flex: 1 30%;
 }
 
 .step-info {
@@ -205,10 +213,17 @@ section {
   align-items: center;
 }
 
-.step h3 {
-  flex: 1 30%;
-  color: #024e76;
-  font-size: 46px;
+.step-img {
+  flex: 1 12%;
+  margin-right: 20px;
+}
+
+.step-img img {
+  max-width: 100%;
+}
+
+.step-text {
+  flex: 12;
 }
 
 .step-text p {
@@ -220,19 +235,6 @@ section {
   font-size: 26px;
   line-height: 1.5;
   color: #024e76;
-}
-
-.step-image {
-  flex: 1 12%;
-  margin-right: 20px;
-}
-
-.step-text {
-  flex: 12;
-}
-
-.step-image img {
-  max-width: 100%;
 }
 
 /* WHAT YOU DO STYLES END */
@@ -247,8 +249,8 @@ section {
 }
 
 .trainer {
-  flex: 1;
   margin: 20px;
+  flex: 1;
   background: #024e76;
   color: #fce138;
 }
@@ -286,15 +288,15 @@ section {
   color: #fce138;
 }
 
-.contact-info > * {
-  flex: 1;
-  margin: 15px;
-}
-
 .contact-info {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.contact-info > * {
+  flex: 1;
+  margin: 15px;
 }
 
 .contact-info iframe {
@@ -310,21 +312,15 @@ section {
   font-size: 32px;
 }
 
-.contact-info p,
-.contact-info address {
+.contact-info p, .contact-info address {
   margin: 20px 0;
   line-height: 1.5;
   font-size: 16px;
   font-style: normal;
 }
 
-.contact-info a {
-  color: #fce138;
-}
-
-.contact-form input,
-.contact-form textarea {
-  border: solid 1px #024e76;
+.contact-form input, .contact-form textarea {
+  border: 1px solid #024e76;
   display: block;
   padding: 7px 15px;
   font-size: 16px;
@@ -343,6 +339,11 @@ section {
   padding: 15px 0;
   font-size: 16px;
 }
+
+.contact-info a {
+  color: #fce138;
+}
+
 
 /* REACH OUT STYLES END */
 
