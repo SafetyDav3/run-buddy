@@ -9,7 +9,6 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-
 /* HEADER / NAV BAR STYLES START */
 
 header {
@@ -45,14 +44,12 @@ header nav ul {
 }
 
 header nav ul li a {
-  margin: 0 30px;
+  padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
 }
 
 /* HEADER / NAVBAR STYLES END */
-
-
 
 /* FOOTER STYLES START */
 footer {
@@ -87,12 +84,13 @@ section {
 
 /* HERO STYLES START */
 .hero {
-  background-image: url('../images/hero-bg.jpg');
+  background-image: url("../images/hero-bg.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .hero-cta {
@@ -101,7 +99,7 @@ section {
   margin: 3.5%;
   color: #fff;
   font-size: 18px;
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
 .hero-cta h2 {
@@ -134,7 +132,7 @@ section {
   font-size: 16px;
   color: #024e76;
   width: 100%;
-  margin-bottom: 15px; 
+  margin-bottom: 15px;
 }
 
 .hero-form label {
@@ -147,13 +145,12 @@ section {
   border: none;
   padding: 10px 20px;
   font-size: 16px;
-} 
+}
 /* HERO STYLES END */
-
 
 /* SECTION TITLE STYLES START */
 .section-title {
-  font-size: 55px;
+  font-size: 48px;
   border-bottom: 3px solid;
   color: #024e76;
   padding-bottom: 20px;
@@ -183,9 +180,8 @@ section {
 }
 /* WHAT YOU DO STYLES END */
 
-
 /* WHAT YOU DO STYLES START */
-.steps { 
+.steps {
   background: #fce138;
 }
 
@@ -312,14 +308,16 @@ section {
   font-size: 32px;
 }
 
-.contact-info p, .contact-info address {
+.contact-info p,
+.contact-info address {
   margin: 20px 0;
   line-height: 1.5;
   font-size: 16px;
   font-style: normal;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
   border: 1px solid #024e76;
   display: block;
   padding: 7px 15px;
@@ -344,7 +342,6 @@ section {
   color: #fce138;
 }
 
-
 /* REACH OUT STYLES END */
 
 /* UTILITIES */
@@ -358,4 +355,9 @@ section {
 
 .flex-row {
   display: flex;
+}
+
+/* ↓↓↓ Media Queries! ↓↓↓ */
+
+@media screen and (max-width: 980px) {
 }
