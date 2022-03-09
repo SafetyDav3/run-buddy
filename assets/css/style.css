@@ -182,33 +182,59 @@ section {
 /* WHAT YOU DO STYLES END */
 
 /* WHAT YOU DO STYLES START */
+
+.step {
+  margin: 50px auto;
+  padding-bottom: 50px;
+  width: 80%;
+  border-bottom: solid 1px #39a6b2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .steps {
   background: #fce138;
 }
 
-.steps div {
-  margin-bottom: 80px;
+.step-info {
+  flex: 2 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.steps img {
-  width: 15%;
-  margin: 10px 0;
-}
-
-.steps h3 {
+.step h3 {
+  flex: 1 30%;
   color: #024e76;
   font-size: 46px;
-  margin-top: 10px;
 }
 
-.steps span {
-  font-size: 38px;
-}
-
-.steps p {
+.step-text p {
   color: #39a6b2;
-  font-size: 23px;
+  font-size: 18px;
 }
+
+.step-text h4 {
+  font-size: 26px;
+  line-height: 1.5;
+  color: #024e76;
+}
+
+.step-image {
+  flex: 1 12%;
+  margin-right: 20px;
+}
+
+.step-text {
+  flex: 12;
+}
+
+.step-image img {
+  max-width: 100%;
+}
+
 /* WHAT YOU DO STYLES END */
 
 /* MEET THE TRAINERS START */
