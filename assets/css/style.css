@@ -9,7 +9,6 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-
 /* HEADER / NAV BAR STYLES START */
 
 header {
@@ -21,6 +20,8 @@ header {
 }
 
 header h1 {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
   font-weight: bold;
   margin: 0;
   font-size: 36px;
@@ -45,14 +46,14 @@ header nav ul {
 }
 
 header nav ul li a {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
 }
 
 /* HEADER / NAVBAR STYLES END */
-
-
 
 /* FOOTER STYLES START */
 footer {
@@ -78,6 +79,7 @@ footer div {
 footer a {
   color: #024e76;
 }
+
 /* END FOOTER STYLES */
 
 /* STYLE ALL SECTION TAGS */
@@ -87,7 +89,7 @@ section {
 
 /* HERO STYLES START */
 .hero {
-  background-image: url('../images/hero-bg.jpg');
+  background-image: url("../images/hero-bg.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -106,14 +108,18 @@ section {
 }
 
 .hero-cta h2 {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
   font-style: italic;
   font-size: 55px;
   color: #fce138;
 }
 
 .hero-form {
+  border-radius: 15px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border: 3px solid #024e76;
-  background-color: #fce138;
+  background-color: rgba(252, 225, 56, 0.8);
   padding: 20px;
   color: #024e76;
   width: 40%;
@@ -124,18 +130,20 @@ section {
   font-size: 24px;
   margin: 0;
 }
+
 .hero-form p {
   margin: 5px 0 15px 0;
 }
 
 .form-input {
+  border-radius: 10px;
   border: 1px solid #024e76;
   display: block;
   padding: 7px 15px;
   font-size: 16px;
   color: #024e76;
   width: 100%;
-  margin-bottom: 15px; 
+  margin-bottom: 15px;
 }
 
 .hero-form label {
@@ -143,14 +151,15 @@ section {
 }
 
 .hero-form button {
+  border-radius: 10px;
   color: #fce138;
   background-color: #024e76;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
-} 
-/* HERO STYLES END */
+}
 
+/* HERO STYLES END */
 
 /* SECTION TITLE STYLES START */
 .section-title {
@@ -170,6 +179,7 @@ section {
 .secondary-border {
   border-color: #39a6b2;
 }
+
 /* SECTION TITLE STYLES END */
 
 /* WHAT WE DO STYLES */
@@ -182,11 +192,11 @@ section {
   font-size: 20px;
   text-align: center;
 }
+
 /* WHAT YOU DO STYLES END */
 
-
 /* WHAT YOU DO STYLES START */
-.steps { 
+.steps {
   background: #fce138;
 }
 
@@ -278,6 +288,7 @@ section {
 .trainer-bio p {
   font-size: 17px;
 }
+
 /* TRAINER STYLES END */
 
 /* REACH OUT STYLES START */
@@ -313,14 +324,18 @@ section {
   font-size: 32px;
 }
 
-.contact-info p, .contact-info address {
+.contact-info p,
+.contact-info address {
   margin: 20px 0;
   line-height: 1.5;
   font-size: 16px;
   font-style: normal;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
+  border-radius: 10px;
+
   border: 1px solid #024e76;
   display: block;
   padding: 7px 15px;
@@ -332,6 +347,8 @@ section {
 }
 
 .contact-form button {
+  border-radius: 10px;
+
   width: 100%;
   border: none;
   background: #fce138;
@@ -344,7 +361,6 @@ section {
 .contact-info a {
   color: #fce138;
 }
-
 
 /* REACH OUT STYLES END */
 
@@ -383,15 +399,17 @@ section {
     font-size: 20px;
   }
 
-  footer h2, footer div {
+  footer h2,
+  footer div {
     text-align: center;
     width: 100%;
   }
 
-  .hero-cta, .hero-form {
+  .hero-cta,
+  .hero-form {
     width: 100%;
   }
-  
+
   .hero-cta {
     text-align: center;
   }
@@ -399,12 +417,12 @@ section {
   .section-title {
     width: 80%;
   }
-  
+
   .trainer {
     flex: 0 70%;
   }
-  
-  .contact-info iframe{
+
+  .contact-info iframe {
     flex: 1 100%;
   }
 }
@@ -434,7 +452,7 @@ section {
   }
 
   .step-text {
-    flex: 100%;  
+    flex: 100%;
   }
 }
 
