@@ -1,3 +1,5 @@
+/* Comment for pull request */
+
 :root {
   --primary-color: #fce138;
   --secondary-color: #024e76;
@@ -98,6 +100,7 @@ footer div {
 footer a {
   color: var(--secondary-color);
 }
+
 /* END FOOTER STYLES */
 
 /* STYLE ALL SECTION TAGS */
@@ -195,6 +198,7 @@ section {
   top: 1px;
   transform: rotate(-58deg);
 }
+
 .checkbox-wrapper input + label::after,
 .radio-wrapper input + label::after {
   content: none;
@@ -213,6 +217,7 @@ section {
   font-size: 24px;
   margin: 0;
 }
+
 .hero-form p {
   margin: 5px 0 15px 0;
 }
@@ -246,6 +251,7 @@ section {
   font-size: 16px;
   border-radius: 10px;
 }
+
 /* HERO STYLES END */
 
 /* SECTION TITLE STYLES START */
@@ -266,6 +272,7 @@ section {
 .secondary-border {
   border-color: var(--tertiary-color);
 }
+
 /* SECTION TITLE STYLES END */
 
 /* WHAT WE DO STYLES */
@@ -278,6 +285,7 @@ section {
   font-size: 20px;
   text-align: center;
 }
+
 /* WHAT YOU DO STYLES END */
 
 /* WHAT YOU DO STYLES START */
@@ -336,6 +344,7 @@ section {
   line-height: 1.5;
   color: var(--secondary-color);
 }
+
 /* WHAT YOU DO STYLES END */
 
 /* MEET THE TRAINERS START */
@@ -376,6 +385,7 @@ section {
 .trainer-bio p {
   font-size: 17px;
 }
+
 /* TRAINER STYLES END */
 
 /* REACH OUT STYLES START */
@@ -458,6 +468,7 @@ section {
 .contact-info a {
   color: var(--primary-color);
 }
+
 /* REACH OUT STYLES END */
 
 /* UTILITIES */
