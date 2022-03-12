@@ -9,10 +9,10 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-
 /* HEADER / NAV BAR STYLES START */
 
 header {
+  z-index: 9999;
   padding: 20px 35px;
   background-color: #39a6b2;
   display: flex;
@@ -68,8 +68,6 @@ header nav ul li a:hover {
 
 /* HEADER / NAVBAR STYLES END */
 
-
-
 /* FOOTER STYLES START */
 footer {
   background: #fce138;
@@ -103,7 +101,7 @@ section {
 
 /* HERO STYLES START */
 .hero {
-  background-image: url('../images/hero-bg.jpg');
+  background-image: url("../images/hero-bg.jpg");
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -140,8 +138,69 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.checkbox-wrapper input,
+.radio-wrapper input {
+  opacity: 0;
+}
+
+.checkbox-wrapper label,
+.radio-wrapper label {
+  position: relative;
+  left: 10px;
+  margin: 10px;
+  line-height: 1.6;
+}
+
+.checkbox-wrapper label::before,
+.radio-wrapper label::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid #024e76;
+  position: absolute;
+  top: -4px;
+  left: -30px;
+}
+
+.radio-wrapper label::before {
+  border-radius: 50%;
+}
+
+.radio-wrapper label::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #024e76;
+  position: absolute;
+  left: -29px;
+  top: -3px;
+}
+
+.checkbox-wrapper label::after {
+  content: "";
+  height: 6px;
+  width: 14px;
+  border-left: 2px solid #024e76;
+  border-bottom: 2px solid #024e76;
+  position: absolute;
+  left: -26px;
+  top: 1px;
+  transform: rotate(-58deg);
+}
+.checkbox-wrapper input + label::after,
+.radio-wrapper input + label::after {
+  content: none;
+}
+
+.checkbox-wrapper input:checked + label::after,
+.radio-wrapper input:checked + label::after {
+  content: "";
+}
+
 .hero-form button:hover {
-  background-color: #39a6b2;  
+  background-color: #39a6b2;
 }
 
 .hero-form h3 {
@@ -159,13 +218,13 @@ section {
   font-size: 16px;
   color: #024e76;
   width: 100%;
-  margin-bottom: 15px; 
+  margin-bottom: 15px;
   border-radius: 10px;
-  background-color: rgba(255,255,255, 0.75);
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 .form-input:focus {
-  background-color: rgba(255,255,255, 1);
+  background-color: rgba(255, 255, 255, 1);
   outline: none;
 }
 
@@ -180,9 +239,8 @@ section {
   padding: 10px 20px;
   font-size: 16px;
   border-radius: 10px;
-} 
+}
 /* HERO STYLES END */
-
 
 /* SECTION TITLE STYLES START */
 .section-title {
@@ -216,9 +274,8 @@ section {
 }
 /* WHAT YOU DO STYLES END */
 
-
 /* WHAT YOU DO STYLES START */
-.steps { 
+.steps {
   background: #fce138;
 }
 
@@ -348,14 +405,16 @@ section {
   font-size: 32px;
 }
 
-.contact-info p, .contact-info address {
+.contact-info p,
+.contact-info address {
   margin: 20px 0;
   line-height: 1.5;
   font-size: 16px;
   font-style: normal;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
   border: 1px solid #024e76;
   display: block;
   padding: 7px 15px;
@@ -365,11 +424,12 @@ section {
   margin-bottom: 15px;
   margin-top: 5px;
   border-radius: 10px;
-  background-color: rgba(255,255,255, 0.75);
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
-.contact-form input:focus, .contact-form textarea:focus {
-  background-color: rgba(255,255,255, 1);
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background-color: rgba(255, 255, 255, 1);
   outline: none;
 }
 
@@ -430,15 +490,17 @@ section {
     font-size: 20px;
   }
 
-  footer h2, footer div {
+  footer h2,
+  footer div {
     text-align: center;
     width: 100%;
   }
 
-  .hero-cta, .hero-form {
+  .hero-cta,
+  .hero-form {
     width: 100%;
   }
-  
+
   .hero-cta {
     text-align: center;
   }
@@ -446,12 +508,12 @@ section {
   .section-title {
     width: 80%;
   }
-  
+
   .trainer {
     flex: 0 70%;
   }
-  
-  .contact-info iframe{
+
+  .contact-info iframe {
     flex: 1 100%;
   }
 }
@@ -481,10 +543,11 @@ section {
   }
 
   .step-text {
-    flex: 100%;  
+    flex: 100%;
   }
 
-  .trainer-bio h3, .trainer-bio h4 {
+  .trainer-bio h3,
+  .trainer-bio h4 {
     display: block;
   }
 }
